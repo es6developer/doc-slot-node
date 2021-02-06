@@ -1,0 +1,30 @@
+
+### - Save Slot
+POST http://localhost:3000/slots HTTP/1.1
+content-type: application/json
+
+{
+    "fromTime": "12:00",
+    "toTime": "16:30",
+    "date" : "04-02-2021"
+}
+
+### - Get slots
+GET http://localhost:3000/slots?date=04-02-2021 HTTP/1.1
+content-type: application/json
+
+### - Create Appointment
+POST http://localhost:3000/appointment HTTP/1.1
+content-type: application/json
+
+{
+    "patientName": "Karthik",
+    "mobileNumber": "6381085562",
+    "appointmentDate" : "04-02-2021",
+    "slot":"601aed1213cae4238c179cdc"
+}
+
+### - Get Appointments
+GET http://localhost:3000/appointment HTTP/1.1
+content-type: application/json
+
